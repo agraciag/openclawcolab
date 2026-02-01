@@ -1,18 +1,45 @@
 # OpenClawColab - Multi-LLM Collaboration Hub
 
-Sistema de colaboración autónoma entre múltiples LLMs, inspirado en [OpenClaw](https://github.com/openclaw/openclaw).
+Autonomous collaboration system for multiple LLMs working together on software projects. Inspired by [OpenClaw](https://github.com/openclaw/openclaw).
 
-**Documentación completa:** [docs/OPENCLAWCOLAB_ARCHITECTURE.md](docs/OPENCLAWCOLAB_ARCHITECTURE.md)
+## Features
 
-## Participantes
+- Real-time WebSocket chat between LLM agents
+- Telegram bot for remote monitoring and control
+- Task queue with priority-based assignment
+- Claude as Orchestrator - reviews other agents' work
+- Auto-branching for safe parallel development
+- Daemon for 24/7 autonomous operation
 
-| Agente | Rol | CLI |
-|--------|-----|-----|
-| **Claude** | Arquitecto / Coordinador | claude-code |
+**Full Documentation:** [docs/OPENCLAWCOLAB_ARCHITECTURE.md](docs/OPENCLAWCOLAB_ARCHITECTURE.md)
+
+## Quick Start
+
+```bash
+# Clone
+git clone https://github.com/agraciag/openclawcolab.git
+cd openclawcolab
+
+# Install
+./scripts/install.sh
+
+# Configure
+cp .env.example .env
+# Edit .env with your Telegram bot token
+
+# Run
+./scripts/start-daemon.sh
+```
+
+## Agents
+
+| Agent | Role | CLI |
+|-------|------|-----|
+| **Claude** | Architect / Orchestrator | claude-code |
 | **Gemini** | Frontend Lead | gemini-cli |
 | **Qwen** | Backend Lead | qwen-cli |
-| **GLM** | Testing Lead | glm-cli |
-| **Ollama** | Auxiliar | ollama |
+| **ChatGPT** | DevOps Lead | aider |
+| **GLM** | Testing Lead | kilo-code |
 
 ## Estructura de Carpetas
 
@@ -63,21 +90,51 @@ Actualiza: /tasks/[TASK-XXX].md con status=completed
 Escribe en: /code_review/[archivo]-review-request.md
 ```
 
-## Proyecto Objetivo
+## Telegram Commands
 
-**Sports Manager Feb 2026** - Sistema de gestión de partidos deportivos en vivo.
+Once the daemon is running with a configured Telegram bot:
 
-Repositorio: `/mnt/d/dev_projects/sports_manager_feb_2026`
+- `/status` - View daemon and agent status
+- `/tasks` - List pending tasks
+- `/assign AGENT TASK-XXX` - Assign task to agent
+- `/pause` - Pause autonomous execution
+- `/resume` - Resume autonomous execution
 
-## Comandos Útiles
+## Architecture
 
-```bash
-# Ver últimos mensajes del chat
-tail -50 /mnt/d/dev_projects/multi_llm_collab/chat/CHAT_LOG.md
-
-# Ver tareas pendientes
-cat /mnt/d/dev_projects/multi_llm_collab/tasks/BACKLOG.md
-
-# Ver contexto actual
-cat /mnt/d/dev_projects/multi_llm_collab/shared/CONTEXT.md
 ```
+┌─────────────────────────────────────────────────────────────┐
+│                    TELEGRAM / HUMAN                          │
+│                  (Remote Control & Monitoring)               │
+└─────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌─────────────────────────────────────────────────────────────┐
+│                   OPENCLAWCOLAB DAEMON                       │
+│  ┌──────────┐ ┌──────────┐ ┌────────────┐ ┌──────────────┐  │
+│  │ Telegram │ │ WebSocket│ │   Task     │ │    Agent     │  │
+│  │   Bot    │ │  Server  │ │   Queue    │ │   Spawner    │  │
+│  └──────────┘ └──────────┘ └────────────┘ └──────────────┘  │
+│                         │                                    │
+│                         ▼                                    │
+│              ┌──────────────────────┐                        │
+│              │    ORCHESTRATOR      │                        │
+│              │  (Claude reviews     │                        │
+│              │   all deliveries)    │                        │
+│              └──────────────────────┘                        │
+└─────────────────────────────────────────────────────────────┘
+                              │
+        ┌────────────┬────────┼────────┬────────────┐
+        ▼            ▼        ▼        ▼            ▼
+   ┌────────┐  ┌────────┐ ┌───────┐ ┌───────┐ ┌────────┐
+   │ CLAUDE │  │ GEMINI │ │ QWEN  │ │  GLM  │ │CHATGPT │
+   └────────┘  └────────┘ └───────┘ └───────┘ └────────┘
+```
+
+## License
+
+MIT
+
+## Author
+
+[@agraciag](https://github.com/agraciag)
