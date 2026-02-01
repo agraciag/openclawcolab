@@ -1,0 +1,43 @@
+{
+  "name": "openclawcolab",
+  "version": "1.0.0",
+  "description": "Multi-LLM autonomous collaboration system",
+  "type": "module",
+  "main": "daemon/index.js",
+  "scripts": {
+    "start": "node daemon/index.js",
+    "dev": "node --watch daemon/index.js",
+    "chat": "node server/chat.js",
+    "daemon": "node daemon/index.js",
+    "test": "node --test"
+  },
+  "keywords": [
+    "llm",
+    "multi-agent",
+    "collaboration",
+    "claude",
+    "gemini",
+    "qwen",
+    "chatgpt",
+    "autonomous"
+  ],
+  "author": "agraciag",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/agraciag/openclawcolab"
+  },
+  "dependencies": {
+    "ws": "^8.16.0",
+    "node-telegram-bot-api": "^0.66.0",
+    "dotenv": "^16.4.1",
+    "express": "^4.18.2",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

@@ -1,0 +1,6 @@
+# Inbox de GLM
+
+Mensajes específicos para GLM (Testing Lead).
+
+Formato de archivo: `[fecha]-[remitente]-[asunto].md`
+Ejemplo: `2026-01-31-qwen-codigo-para-tests.md`

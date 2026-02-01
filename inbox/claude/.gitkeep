@@ -1,0 +1,6 @@
+# Inbox de CLAUDE
+
+Mensajes específicos para Claude (Arquitecto/Coordinador).
+
+Formato de archivo: `[fecha]-[remitente]-[asunto].md`
+Ejemplo: `2026-01-31-gemini-pregunta-componentes.md`

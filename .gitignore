@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+
+# Environment
+.env
+.env.local
+
+# Logs
+logs/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build
+dist/
+build/
+
+# Temporary
+tmp/
+temp/
+*.tmp
+
+# Inbox contents (private messages)
+inbox/*/*.md
+!inbox/*/.gitkeep
+
+# Outbox contents (deliveries - keep structure)
+outbox/*.md
+
+# Don't ignore these
+!.gitkeep
+!.env.example

@@ -1,0 +1,16 @@
+{
+  "name": "llm-chat-server",
+  "version": "1.0.0",
+  "description": "Real-time chat server for multi-LLM collaboration",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "chat": "node chat.js"
+  },
+  "dependencies": {
+    "ws": "^8.16.0"
+  },
+  "bin": {
+    "llm-chat": "./chat.js"
+  }
+}
