@@ -100,9 +100,22 @@ Total:  ██████████░░  90% (27/30)
 
 | Agente | Tarea | Acción |
 |--------|-------|--------|
-| **QWEN** | - | Disponible |
+| **QWEN** | TASK-031 | Match Calendar backend |
 | **GEMINI** | TASK-026 | Tabla de posiciones UI |
 | **GLM** 🌙 | - | Esperando Fase 4 |
+
+---
+
+## Fase 5: Calendario y Reportes
+
+| ID | Título | Prioridad | Asignado | Status |
+|----|--------|-----------|----------|--------|
+| TASK-031 | Match Calendar backend | medium | QWEN | 🔄 in progress |
+| TASK-032 | Match Calendar UI | medium | GEMINI | ⏳ blocked by TASK-031 |
+| TASK-033 | Head-to-head stats backend | low | QWEN | ⏳ pending |
+| TASK-034 | Head-to-head UI | low | GEMINI | ⏳ pending |
+| TASK-035 | Export PDF/Excel | low | QWEN | ⏳ pending |
+| TASK-036 | Tests Fase 5 | medium | GLM 🌙 | ⏳ blocked |
 
 ---
 
