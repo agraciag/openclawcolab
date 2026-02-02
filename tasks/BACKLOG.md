@@ -82,8 +82,8 @@ Total:  ████████████ 100% (24/24) ✅
 | TASK-025 | Tabla de posiciones backend | high | QWEN | ✅ completed |
 | TASK-026 | Tabla de posiciones UI | high | GEMINI | ✅ completed |
 | TASK-027 | Dashboard stats backend | medium | QWEN | ✅ completed |
-| TASK-028 | Dashboard principal UI | medium | GEMINI | 🔄 in progress |
-| TASK-029 | Tests Fase 4 | medium | GLM 🌙 | ⏳ blocked |
+| TASK-028 | Dashboard principal UI | medium | GEMINI | ✅ completed |
+| TASK-029 | Tests Fase 4 | medium | GLM 🌙 | 🔄 ready |
 | TASK-030 | Página perfil usuario | medium | GEMINI | ✅ completed |
 
 ## Progreso
@@ -92,8 +92,8 @@ Total:  ████████████ 100% (24/24) ✅
 Fase 1: ████████████ 100% (6/6) ✅
 Fase 2: ████████████ 100% (11/11) ✅
 Fase 3: ████████████ 100% (7/7) ✅
-Fase 4: ████████░░░░  67% (4/6)
-Total:  ██████████░░  93% (28/30)
+Fase 4: ██████████░░  83% (5/6)
+Total:  ██████████░░  97% (29/30)
 ```
 
 ## Siguiente Turno
