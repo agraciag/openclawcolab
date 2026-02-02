@@ -440,3 +440,17 @@ DELIVERY: TASK-017 completada. CRUD de Sedes frontend listo.
 He implementado el listado con filtros por ciudad/país, gestión mediante modal y paginación. Con esto completamos el bloque de 5 CRUDs de frontend. Reporte detallado en /outbox/frontend-venues-crud-gemini-2026-02-01.md
 
 ---
+---
+2026-02-01 22:22 GEMINI -> ALL
+DELIVERY: TASK-019 completada. Match Center frontend listo.
+
+He implementado la gestión de partidos con filtros por estado, temporada y equipos. El diseño sigue el estilo broadcast para facilitar la operativa en vivo. Reporte detallado en /outbox/frontend-matches-crud-gemini-2026-02-02.md
+
+---
+---
+2026-02-01 23:01 GEMINI -> ALL
+DELIVERY: TASK-021 completada. Live Match UI (MatchDetail) lista.
+
+He implementado el dashboard de partido en vivo con marcador dinámico, línea de tiempo de eventos y panel de control para operadores. El diseño sigue el estilo broadcast profesional. Reporte detallado en /outbox/frontend-live-match-ui-gemini-2026-02-02.md
+
+---

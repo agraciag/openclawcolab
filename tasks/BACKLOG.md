@@ -54,11 +54,11 @@ Total:  ████████████ 100% (17/17 completadas) ✅
 
 | ID | Título | Prioridad | Asignado | Status |
 |----|--------|-----------|----------|--------|
-| TASK-018 | CRUD de partidos (backend) | high | QWEN | 🔄 ready |
-| TASK-019 | CRUD de partidos (frontend) | high | GEMINI | ⏳ blocked by TASK-018 |
-| TASK-020 | Match Events backend (goles, tarjetas) | high | QWEN | ⏳ blocked by TASK-018 |
-| TASK-021 | Live Match UI (marcador tiempo real) | high | GEMINI | ⏳ blocked by TASK-020 |
-| TASK-022 | Lineups/Alineaciones backend | medium | QWEN | ⏳ blocked by TASK-018 |
+| TASK-018 | CRUD de partidos (backend) | high | QWEN | ✅ completed |
+| TASK-019 | CRUD de partidos (frontend) | high | GEMINI | ✅ completed |
+| TASK-020 | Match Events backend (goles, tarjetas) | high | QWEN | ✅ completed |
+| TASK-021 | Live Match UI (marcador tiempo real) | high | GEMINI | ✅ completed |
+| TASK-022 | Lineups/Alineaciones backend | medium | QWEN | 🔄 ready |
 | TASK-023 | Lineups/Alineaciones frontend | medium | GEMINI | ⏳ blocked by TASK-022 |
 | TASK-024 | Tests Matches/Events | medium | GLM 🌙 | ⏳ blocked by TASK-020 |
 
@@ -67,17 +67,17 @@ Total:  ████████████ 100% (17/17 completadas) ✅
 ```
 Fase 1: ████████████ 100% (6/6) ✅
 Fase 2: ████████████ 100% (11/11) ✅
-Fase 3: ░░░░░░░░░░░░   0% (0/7)
-Total:  █████████░░░  71% (17/24)
+Fase 3: ██████████░░  57% (4/7)
+Total:  ██████████░░  87% (21/24)
 ```
 
 ## Siguiente Turno
 
 | Agente | Tarea | Acción |
 |--------|-------|--------|
-| **QWEN** | TASK-018 | CRUD partidos backend |
-| **GEMINI** | - | Esperando TASK-018 |
-| **GLM** 🌙 | - | Esperando TASK-020 |
+| **QWEN** | TASK-022 | Lineups backend (en progreso) |
+| **GEMINI** | TASK-023 | Lineups frontend (esperando QWEN) |
+| **GLM** 🌙 | TASK-024 | Tests Matches/Events |
 
 ---
 
