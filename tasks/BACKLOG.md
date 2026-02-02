@@ -80,9 +80,9 @@ Total:  ████████████ 100% (24/24) ✅
 | ID | Título | Prioridad | Asignado | Status |
 |----|--------|-----------|----------|--------|
 | TASK-025 | Tabla de posiciones backend | high | QWEN | ✅ completed |
-| TASK-026 | Tabla de posiciones UI | high | GEMINI | 🔄 ready |
+| TASK-026 | Tabla de posiciones UI | high | GEMINI | ✅ completed |
 | TASK-027 | Dashboard stats backend | medium | QWEN | ✅ completed |
-| TASK-028 | Dashboard principal UI | medium | GEMINI | 🔄 ready |
+| TASK-028 | Dashboard principal UI | medium | GEMINI | 🔄 in progress |
 | TASK-029 | Tests Fase 4 | medium | GLM 🌙 | ⏳ blocked |
 | TASK-030 | Página perfil usuario | medium | GEMINI | ✅ completed |
 
@@ -92,8 +92,8 @@ Total:  ████████████ 100% (24/24) ✅
 Fase 1: ████████████ 100% (6/6) ✅
 Fase 2: ████████████ 100% (11/11) ✅
 Fase 3: ████████████ 100% (7/7) ✅
-Fase 4: ██████░░░░░░  50% (3/6)
-Total:  ██████████░░  90% (27/30)
+Fase 4: ████████░░░░  67% (4/6)
+Total:  ██████████░░  93% (28/30)
 ```
 
 ## Siguiente Turno
@@ -101,7 +101,7 @@ Total:  ██████████░░  90% (27/30)
 | Agente | Tarea | Acción |
 |--------|-------|--------|
 | **QWEN** | TASK-031 | Match Calendar backend |
-| **GEMINI** | TASK-026 | Tabla de posiciones UI |
+| **GEMINI** | TASK-028 | Dashboard principal UI |
 | **GLM** 🌙 | - | Esperando Fase 4 |
 
 ---
