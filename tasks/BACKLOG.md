@@ -1,6 +1,6 @@
 # Backlog de Tareas
 
-*Última actualización: 2026-02-01 20:15 por CLAUDE*
+*Última actualización: 2026-02-01 23:45 por CLAUDE*
 
 ## Fase 1: Fundamentos ✅ COMPLETADA
 
@@ -21,20 +21,20 @@
 | TASK-008 | CRUD de equipos (frontend) | medium | GEMINI | ✅ completed |
 | TASK-009 | CRUD de jugadores (backend) | medium | QWEN | ✅ completed |
 | TASK-010 | CRUD de jugadores (frontend) | medium | GEMINI | ✅ completed |
-| TASK-012 | CRUD de torneos (backend) | medium | QWEN | 🔄 ready |
-| TASK-013 | CRUD de torneos (frontend) | medium | GEMINI | ⏳ blocked by TASK-012 |
-| TASK-014 | CRUD de temporadas (backend) | medium | QWEN | 🔄 ready |
-| TASK-015 | CRUD de temporadas (frontend) | medium | GEMINI | ⏳ blocked by TASK-014 |
-| TASK-016 | CRUD de sedes (backend) | medium | QWEN | 🔄 ready |
-| TASK-017 | CRUD de sedes (frontend) | medium | GEMINI | ⏳ blocked by TASK-016 |
-| TASK-011 | Tests unitarios Teams/Players | medium | GLM 🌙 | ⏳ blocked (nocturno) |
+| TASK-012 | CRUD de torneos (backend) | medium | QWEN | ✅ completed |
+| TASK-013 | CRUD de torneos (frontend) | medium | GEMINI | ✅ completed |
+| TASK-014 | CRUD de temporadas (backend) | medium | QWEN | ✅ completed |
+| TASK-015 | CRUD de temporadas (frontend) | medium | GEMINI | ✅ completed |
+| TASK-016 | CRUD de sedes (backend) | medium | QWEN | ✅ completed |
+| TASK-017 | CRUD de sedes (frontend) | medium | GEMINI | ✅ completed |
+| TASK-011 | Tests unitarios Teams/Players | medium | GLM 🌙 | ✅ completed |
 
 ## Progreso
 
 ```
 Fase 1: ████████████ 100% (6/6 completadas) ✅
-Fase 2: ████████░░░░  66% (4/11 completadas)
-Total:  ███████░░░░░  58% (10/17 completadas)
+Fase 2: ████████████ 100% (11/11 completadas) ✅
+Total:  ████████████ 100% (17/17 completadas) ✅
 ```
 
 ## Roles del Equipo
@@ -46,13 +46,38 @@ Total:  ███████░░░░░  58% (10/17 completadas)
 | GEMINI | Frontend Lead | Día |
 | GLM 🌙 | Testing Lead | **Noche** |
 
+## FASE 2 COMPLETADA ✅
+
+---
+
+## Fase 3: Partidos y Eventos
+
+| ID | Título | Prioridad | Asignado | Status |
+|----|--------|-----------|----------|--------|
+| TASK-018 | CRUD de partidos (backend) | high | QWEN | 🔄 ready |
+| TASK-019 | CRUD de partidos (frontend) | high | GEMINI | ⏳ blocked by TASK-018 |
+| TASK-020 | Match Events backend (goles, tarjetas) | high | QWEN | ⏳ blocked by TASK-018 |
+| TASK-021 | Live Match UI (marcador tiempo real) | high | GEMINI | ⏳ blocked by TASK-020 |
+| TASK-022 | Lineups/Alineaciones backend | medium | QWEN | ⏳ blocked by TASK-018 |
+| TASK-023 | Lineups/Alineaciones frontend | medium | GEMINI | ⏳ blocked by TASK-022 |
+| TASK-024 | Tests Matches/Events | medium | GLM 🌙 | ⏳ blocked by TASK-020 |
+
+## Progreso
+
+```
+Fase 1: ████████████ 100% (6/6) ✅
+Fase 2: ████████████ 100% (11/11) ✅
+Fase 3: ░░░░░░░░░░░░   0% (0/7)
+Total:  █████████░░░  71% (17/24)
+```
+
 ## Siguiente Turno
 
 | Agente | Tarea | Acción |
 |--------|-------|--------|
-| **GEMINI** | - | Esperando backend (TASK-012/14/16) |
-| **QWEN** | TASK-012 | CRUD torneos backend |
-| **GLM** 🌙 | TASK-011 | Tests Teams/Players |
+| **QWEN** | TASK-018 | CRUD partidos backend |
+| **GEMINI** | - | Esperando TASK-018 |
+| **GLM** 🌙 | - | Esperando TASK-020 |
 
 ---
 
