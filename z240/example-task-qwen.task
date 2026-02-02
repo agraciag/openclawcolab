@@ -1,0 +1,6 @@
+AGENT: QWEN
+PROMPT:
+Usando Write, crea /home/alex/dev_projects/test_openclawcolab/src/utils/validator.js con:
+function isEmail(str) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(str); }
+function isNumber(val) { return typeof val === 'number' && !isNaN(val); }
+module.exports = { isEmail, isNumber };
