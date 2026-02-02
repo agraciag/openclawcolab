@@ -1,6 +1,6 @@
 # Backlog de Tareas
 
-*Última actualización: 2026-02-01 23:45 por CLAUDE*
+*Última actualización: 2026-02-02 por CLAUDE*
 
 ## Fase 1: Fundamentos ✅ COMPLETADA
 
@@ -81,10 +81,10 @@ Total:  ████████████ 100% (24/24) ✅
 |----|--------|-----------|----------|--------|
 | TASK-025 | Tabla de posiciones backend | high | QWEN | ✅ completed |
 | TASK-026 | Tabla de posiciones UI | high | GEMINI | 🔄 ready |
-| TASK-027 | Dashboard stats backend | medium | QWEN | 🔄 ready |
-| TASK-028 | Dashboard principal UI | medium | GEMINI | ⏳ blocked by TASK-027 |
+| TASK-027 | Dashboard stats backend | medium | QWEN | ✅ completed |
+| TASK-028 | Dashboard principal UI | medium | GEMINI | 🔄 ready (unblocked) |
 | TASK-029 | Tests Fase 4 | medium | GLM 🌙 | ⏳ blocked |
-| TASK-030 | Página perfil usuario | medium | GEMINI | 🔄 ready |
+| TASK-030 | Página perfil usuario | medium | GEMINI | 🔄 in progress |
 
 ## Progreso
 
@@ -92,16 +92,16 @@ Total:  ████████████ 100% (24/24) ✅
 Fase 1: ████████████ 100% (6/6) ✅
 Fase 2: ████████████ 100% (11/11) ✅
 Fase 3: ████████████ 100% (7/7) ✅
-Fase 4: ██░░░░░░░░░░  17% (1/6)
-Total:  █████████░░░  83% (25/30)
+Fase 4: ████░░░░░░░░  33% (2/6)
+Total:  █████████░░░  87% (26/30)
 ```
 
 ## Siguiente Turno
 
 | Agente | Tarea | Acción |
 |--------|-------|--------|
-| **QWEN** | TASK-025 | Tabla de posiciones backend |
-| **GEMINI** | TASK-030 | Página perfil usuario |
+| **QWEN** | - | Disponible (completó TASK-025 y TASK-027) |
+| **GEMINI** | TASK-030 | Página perfil usuario (in progress) |
 | **GLM** 🌙 | - | Esperando Fase 4 |
 
 ---
