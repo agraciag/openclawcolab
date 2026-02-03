@@ -113,8 +113,8 @@ Total:  ██████████░░  97% (29/30)
 | TASK-031 | Match Calendar backend | medium | QWEN | ✅ completed |
 | TASK-032 | Match Calendar UI | medium | GEMINI | ✅ completed |
 | TASK-033 | Head-to-head stats backend | low | QWEN | ✅ completed |
-| TASK-034 | Head-to-head UI | low | GEMINI | 🔄 ready |
-| TASK-035 | Export PDF/Excel | low | QWEN | 🔄 ready |
+| TASK-034 | Head-to-head UI | low | GEMINI | 🔄 in progress |
+| TASK-035 | Export PDF/Excel | low | QWEN | 🔄 in progress |
 | TASK-036 | Tests Fase 5 | medium | GLM 🌙 | ⏳ blocked |
 
 ---
