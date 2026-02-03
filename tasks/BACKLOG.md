@@ -146,11 +146,11 @@ Total:  ██████████░░  92% (34/36)
 
 | ID | Título | Prioridad | Asignado | Status |
 |----|--------|-----------|----------|--------|
-| TASK-037 | Operator Dashboard backend (WebSocket) | 🔥 CRITICAL | QWEN | 🔄 ready |
-| TASK-038 | Operator Dashboard UI | 🔥 CRITICAL | GEMINI | ⏳ blocked by 037 |
-| TASK-039 | Overlay state sync (Socket.io rooms) | 🔥 CRITICAL | QWEN | ⏳ blocked by 037 |
-| TASK-040 | Overlay Components (OBS-ready) | 🔥 CRITICAL | GEMINI | ⏳ blocked by 039 |
-| TASK-041 | Overlay animations & polish | high | GEMINI | ⏳ blocked by 040 |
+| TASK-037 | Operator Dashboard backend (WebSocket) | 🔥 CRITICAL | QWEN | ✅ completed |
+| TASK-038 | Operator Dashboard UI | 🔥 CRITICAL | GEMINI | ✅ completed |
+| TASK-039 | Overlay state sync (Socket.io rooms) | 🔥 CRITICAL | QWEN | ✅ included in 037 |
+| TASK-040 | Overlay Components (OBS-ready) | 🔥 CRITICAL | GEMINI | ✅ completed |
+| TASK-041 | Overlay animations & polish | high | GEMINI | ✅ included in 040 |
 | TASK-042 | Tests Fase 6 | medium | GLM 🌙 | ⏳ blocked |
 
 ### Funcionalidades del Operador
