@@ -133,10 +133,46 @@ Total:  ██████████░░  92% (34/36)
 | TASK-029 | Tests Fase 4 (Dashboard, Standings, Profile) |
 | TASK-036 | Tests Fase 5 (Calendar, H2H, Export) |
 
-## Estado
+## Estado Fases 1-5
 
 ✅ **QWEN y GEMINI han completado todo el desarrollo de Fases 1-5**
 ⏳ **Solo quedan tests para GLM (trabajo nocturno)**
+
+---
+
+## 🔥 Fase 6: Operador y Broadcast (CORE FEATURE)
+
+**Esta es la fase más importante - el motivo de la aplicación.**
+
+| ID | Título | Prioridad | Asignado | Status |
+|----|--------|-----------|----------|--------|
+| TASK-037 | Operator Dashboard backend (WebSocket) | 🔥 CRITICAL | QWEN | 🔄 ready |
+| TASK-038 | Operator Dashboard UI | 🔥 CRITICAL | GEMINI | ⏳ blocked by 037 |
+| TASK-039 | Overlay state sync (Socket.io rooms) | 🔥 CRITICAL | QWEN | ⏳ blocked by 037 |
+| TASK-040 | Overlay Components (OBS-ready) | 🔥 CRITICAL | GEMINI | ⏳ blocked by 039 |
+| TASK-041 | Overlay animations & polish | high | GEMINI | ⏳ blocked by 040 |
+| TASK-042 | Tests Fase 6 | medium | GLM 🌙 | ⏳ blocked |
+
+### Funcionalidades del Operador
+- ⏱️ Control del reloj (1ª parte, descanso, 2ª parte, prórroga, penales)
+- ⚽ Registrar goles (jugador, minuto, asistencia)
+- 🟨🟥 Registrar tarjetas
+- 🔄 Registrar sustituciones
+- ➕ Tiempo añadido
+- 📺 VAR
+
+### Funcionalidades del Overlay (OBS-Ready)
+- 📊 Marcador en tiempo real con reloj
+- ⚽ Animación de gol (nombre, número, equipo)
+- 🟨🟥 Animación de tarjetas
+- 📋 Alineaciones
+- 📈 Estadísticas en vivo
+- 🎬 Lower third (cintillo informativo)
+
+### Stack Técnico
+- **WebSocket**: Socket.io para tiempo real
+- **Estado**: En memoria para baja latencia
+- **Overlay**: Browser source para OBS (1920x1080, fondo transparente)
 
 ---
 
